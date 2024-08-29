@@ -21,7 +21,7 @@
     }
       
     setHeight(350);
-    setHeight(); // will use the default value of 50
+    setHeight();
     setHeight(135);
     setHeight(80);
 
@@ -31,5 +31,18 @@
     }
 
     echo (suma(3,4));
+
+    // Variable Number of Arguments
+    function sumMyNumbers(...$x) {
+        $n = 0;
+        $len = count($x);
+        for($i = 0; $i < $len; $i++) {
+          $n += $x[$i];
+        }
+        return $n;
+      }
+      
+      $a = sumMyNumbers(5, 2, 6, 2, 7, 7);
+      echo $a;
 
 ?>
