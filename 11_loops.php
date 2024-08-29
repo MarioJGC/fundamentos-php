@@ -31,5 +31,4 @@
         }
         echo "The number is: $x <br>";
     }
-
 ?>
